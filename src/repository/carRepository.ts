@@ -6,7 +6,7 @@ async function getCars() {
 
 async function getCar(id: number) {
   return prisma.cars.findFirst({
-    where: { id: id}
+    where: { id: id }
   })
 }
 
